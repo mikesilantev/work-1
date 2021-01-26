@@ -27,6 +27,10 @@ img, main, section, footer {
   opacity: .7;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
 /* Page */
 .page {
   min-width: 1100px;
@@ -62,8 +66,6 @@ HEADER
 /* header__title - Научиться учиться*/
 .header__title {
   z-index: 1;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   width: 730px;
   height: 100%;
@@ -207,8 +209,6 @@ DESCRIPTION
 background-image: url('../images/feynman.png');
 background-repeat: no-repeat;
 background-position: left bottom;
-display: flex;
-flex-direction: column;
 align-items: center;
 position: relative;
 height: 790px;
@@ -293,8 +293,6 @@ height: 790px;
 
 .footer__column_content-copyright{
   flex-basis: 711px;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
 
 }
@@ -310,14 +308,10 @@ height: 790px;
 }
 
 .footer__column_content-info {
-  display: flex;
-  flex-direction: column;
   line-height: 30px;
   font-size: 18px;
 }
 .footer__column_content-social {
-  display: flex;
-  flex-direction: column;
   line-height: 30px;
   font-size: 18px;
 }
