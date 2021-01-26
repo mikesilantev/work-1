@@ -1,9 +1,9 @@
 
 /* Временные стили */
-body, div, header, h1, h2, h3, h4, p, a,
+/* body, div, header, h1, h2, h3, h4, p, a,
 img, main, section, footer {
   border: 1px solid red;
-}
+} */
 /*Цвета*/
 /*
 серый (фон) #1f1f1f
@@ -22,6 +22,11 @@ img, main, section, footer {
 .link {
   text-decoration: none;
 }
+
+.link:hover {
+  opacity: .7;
+}
+
 /* Page */
 .page {
   min-width: 1100px;
@@ -268,4 +273,70 @@ height: 790px;
   right: -210px;
   top: 0;
   z-index: -1;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+.footer__columns {
+  margin: auto;
+  width: 90%;
+  min-height: 350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.footer__column_content-copyright{
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.logo_place_footer {
+  height: 35px;
+  background-image: url('../images/logo_place_footer.svg');
+}
+
+.footer__author {
+  margin: 18px 0;
+  line-height: 25px;
+  font-size: 18px;
+}
+
+.footer__column_content-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+  font-size: 18px;
+}
+.footer__column_content-social {
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.footer__column-heading {
+  font-weight: bold;
+  margin: 0 0 20px;
+}
+.footer__column-links {
+  font-weight: normal;
+  color: white;
+}
+.footer__column-links:last-child {
+  margin: 0 0 16px;
+}
+
+.footer__social-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 0 10px 0 0;
 }
