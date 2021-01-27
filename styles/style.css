@@ -52,6 +52,8 @@ HEADER
   min-height: 600px;
   max-height: 756px;
   position: relative;
+  background-color: #f2f2f2;
+
 }
 
 /* logo_place_header - Логотип в топе */
@@ -65,7 +67,10 @@ HEADER
 
 /* header__title - Научиться учиться*/
 .header__title {
-  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
   justify-content: center;
   width: 730px;
   height: 100%;
@@ -78,32 +83,37 @@ HEADER
 /* header__subtitle Какие современные... */
 .header__subtitle {
   position: absolute;
-  width: 386px;
+  width: 388px;
   bottom: 30px;
   left: 64px;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  margin: 0;
+  z-index: 2;
 
 }
 /* header__main-illustration IMG грустный парень */
 .header__main-illustration {
   position: absolute;
+  z-index: 1;
   right: 0;
   bottom: 0;
   width: 765px;
   height: 608px;
-  z-index: -1;
 }
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
-  z-index: -2;
   position: absolute;
   top: 64px;
   right: 0px;
   height: 568px;
   width: 568px;
   background: #2f80ed;
+}
+
+.header__link {
+  color: #2f80ed;
 }
 
 /*
@@ -206,13 +216,16 @@ DESCRIPTION
 
 /* FEYNMAN */
 .feynman {
-background-image: url('../images/feynman.png');
-background-repeat: no-repeat;
-background-position: left bottom;
-align-items: center;
-position: relative;
-height: 790px;
-
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  background-image: url('../images/feynman.png');
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  align-items: center;
+  position: relative;
+  height: 790px;
+  padding: 100px 0 0;
 }
 
 .feynman__title {
@@ -233,6 +246,7 @@ height: 790px;
 }
 
 .feynman__link {
+  color: #2f80ed;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -267,6 +281,8 @@ height: 790px;
 }
 
 .kaufman__triangle {
+  background-image: url('../images/kaufman-triangle.svg');
+  background-size: cover;
   position: absolute;
   width: 877px;
   height: 877px;
@@ -277,6 +293,10 @@ height: 790px;
 
 /* FOOTER */
 .footer {
+  display: flex;
+  min-height: 350px;
+  box-sizing: border-box;
+  padding: 60px 0 40px;
   background-color: #1f1f1f;
   color: white;
 }
@@ -284,15 +304,19 @@ height: 790px;
 .footer__columns {
   margin: auto;
   width: 90%;
-  min-height: 350px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
 }
 
-.footer__column_content-copyright{
+.footer__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column_content_copyright{
   flex-basis: 711px;
+  flex-direction: column;
   justify-content: space-between;
 
 }
@@ -307,25 +331,25 @@ height: 790px;
   font-size: 18px;
 }
 
-.footer__column_content-info {
+.footer__column_content_info,
+.footer__column_content_social {
   line-height: 30px;
   font-size: 18px;
 }
-.footer__column_content-social {
-  line-height: 30px;
-  font-size: 18px;
-}
+
 
 .footer__column-heading {
   font-weight: bold;
   margin: 0 0 20px;
 }
 .footer__column-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 16px;
+}
+.footer__column-link {
   font-weight: normal;
   color: white;
-}
-.footer__column-links:last-child {
-  margin: 0 0 16px;
 }
 
 .footer__social-icon {
