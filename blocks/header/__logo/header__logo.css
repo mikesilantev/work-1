@@ -4,3 +4,10 @@
   background-repeat: no-repeat;
   z-index: 1;
 }
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  height: 32px;
+  background-image: url('../../../images/logo_place_header.svg');
+}
