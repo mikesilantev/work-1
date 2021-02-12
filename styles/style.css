@@ -105,7 +105,7 @@
   justify-content: space-between;
 }
 
-.two-columns__breef {
+.two-columns__brief {
   margin: 0;
   width: 175px;
   line-height: 1.2;
@@ -277,7 +277,7 @@
 }
 
 .footer__columns {
-  margin: auto;
+  margin: 0 auto;
   width: 90%;
   display: flex;
   flex-direction: row;
