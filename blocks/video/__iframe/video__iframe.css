@@ -1,0 +1,6 @@
+.video__iframe {
+  margin-top: 50px;
+  width: 515px;
+  height: 316px;
+  object-fit: cover;
+}

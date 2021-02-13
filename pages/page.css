@@ -43,7 +43,7 @@
 
 /* oakley  */
 @import url(../blocks/oakley/oakley.css);
-
+@import url(../blocks/two-columns/_theme/two-columns_theme_light/two-columns_theme_light.css);
 /* digits */
 @import url(../blocks/digits/digits.css);
 
@@ -90,6 +90,7 @@
 @import url(../blocks/footer/__column_content_copyright/footer__column_content_copyright.css);
 @import url(../blocks/footer/__author/footer__author.css);
 @import url(../blocks/footer/__column_content_info/footer__column_content_info.css);
+@import url(../blocks/footer/__column_content_social/footer__column_content_social.css);
 @import url(../blocks/footer/__column-heading/footer__column-heading.css);
 @import url(../blocks/footer/__column-links/footer__column-links.css);
 @import url(../blocks/footer/__column-link/footer__column-link.css);
