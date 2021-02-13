@@ -2,9 +2,7 @@
   text-decoration: none;
 }
 
-
-
-/* .flex-column {
-  display: flex;
-  flex-direction: column;
-} */
+.link:hover {
+  opacity: .4;
+  transition: linear .7s;
+}

@@ -2,4 +2,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: row;
+  height: 608px;
+  align-items: flex-start;
 }

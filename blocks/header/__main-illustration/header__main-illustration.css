@@ -5,4 +5,6 @@
   bottom: 0;
   width: 765px;
   height: 608px;
+  object-fit: cover;
+  object-position: bottom;
 }
