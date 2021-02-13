@@ -5,6 +5,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   margin-right: 100px;
+  list-style-type: none;
 }
 .cards__item:nth-child(3n) {
   margin-right: 0px;
