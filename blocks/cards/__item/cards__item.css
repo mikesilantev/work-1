@@ -1,6 +1,9 @@
 .cards__item {
   width: 240px;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-right: 100px;
 }
 .cards__item:nth-child(3) {

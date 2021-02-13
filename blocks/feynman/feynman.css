@@ -1,13 +1,20 @@
 /* FEYNMAN */
 
 .feynman {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #f2f2f2;
   background-image: url('../../images/feynman.png');
   background-repeat: no-repeat;
   background-position: left bottom;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   height: 790px;
   padding: 100px 0 0;
