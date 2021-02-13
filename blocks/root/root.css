@@ -7,3 +7,7 @@
 * {
   border: 1px solid red;
 }
+
+h3, p {
+  margin: 0;
+}
